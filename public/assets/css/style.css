@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+section {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* 1vh = 1% du viewport */
+    background: url(/assets/images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 150px;
+}
+
+
+.container {
+    position: relative;
+    width: calc(100% - 100px);
+    min-height: calc(100vh - 200px);
+    min-height: 300px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    padding-bottom: 10px;
+}
+
+header {
+    position: absolute;
+    top: -40px;
+    right: 20px;
+    left: 20px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+header ul {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+header ul li {
+    list-style: none;
+    margin: 0 30px;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-size: 1.4em;
+    font-weight: 700;
+    color: rgb(5, 36, 79);
+    padding: 8px 15px;
+    border-radius: 25px;
+    transition: background 0.3s;
+    text-transform: uppercase;
+}
+
+header ul li a:hover,
+header ul li a.active {
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.presentation-banner {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.presentation-banner .img-logo {
+    margin-top: 30px;
+}
+
+.page-description {
+    transform: translateX(-100px);
+    max-width: 1700px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 40px;
+    padding-left: 110px;
+}
+
+.page-description h2 {
+    font-size: 3em;
+    color: rgb(5, 36, 79);
+    padding-bottom: 15px;
+}
+
+.page-description p {
+    font-size: 1.2em;
+    color: rgb(5, 36, 79);
+}
+
+.page-description a {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #fff;
+    color: rgb(5, 36, 79);
+    margin-top: 20px;
+    border-radius: 30px;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.img-logo img {
+    max-width: 200px;
+    margin-right: 50px;
+}
+
+.social-links {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.social-links li {
+    list-style: none;
+    margin: 0 30px;
+}
+
+.social-links li a {
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 5px 0;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+    font-size: 1.3em;
+    transition: 0.5s;
+}
+
+.social-links li a:hover {
+    transform: rotate(360deg);
+}
+
+.content-page {
+    padding-bottom: 50px;
+}
